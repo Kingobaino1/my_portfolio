@@ -1,6 +1,72 @@
 @import "~bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free";
 
+$link-color: #db4747;
+
 body {
-  background-color: red;
+  background-color: #212123;
+}
+
+.link_desc {
+  color: $link-color;
+  font-weight: 500;
+  font-family: Roboto, Ariel, sans-serif;
+}
+
+.line {
+  background-color: gray;
+  width: 60px;
+  height: 2px;
+}
+
+.poppins {
+  font-family: Poppins;
+}
+
+.social {
+  width: 60%;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.project_1 {
+  background-image: url('~p1.png');
+}
+
+.project_2 {
+   background-image: url('~p2c.png');
+}
+
+.project_3 {
+   background-image: url('~p3.png');
+}
+
+
+.link {
+  background-color: $link-color;
+  width: 50%;
+  height: 55px;
+}
+
+.bio {
+  background-color:#212123;
+  height: 238px;
+  width: 238px;
+}
+
+.hash {
+  background: gray;
+  width: 40px;
+  height: 40px;
+}
+
+.hash_image {
+  width: 20px;
+  height: 20px;
+}
+@media only screen and (min-width: 320px){
 }
