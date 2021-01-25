@@ -1,0 +1,14 @@
+<%= form_for :contact, url: contacts_path do |f| %>
+  <div class="form_height field">
+    <%= f.text_field :name, placeholder: 'Your name', class: 'text-muted bg-dark form_height w-100 pl-2' %>
+  </div>
+  <div class="field form_height bg-dark mt-3">
+    <%= f.text_field :email, placeholder: 'Your email', class: 'text-muted bg-dark w-100 form_height pl-2' %>
+  </div>
+  <div class="field bg-dark mt-3 form-height">
+    <%= f.text_area :content, placeholder: 'Enter your message here', class: 'text-muted bg-dark w-100 form-height pl-2' %>
+  </div>
+   <div class="field bg-danger mt-3 form_height">
+    <%= f.submit 'Start collaboration', class: 'text-white b_color w-100 form_height' %>
+  </div>
+<% end %>
