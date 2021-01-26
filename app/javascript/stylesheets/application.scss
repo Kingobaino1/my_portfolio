@@ -20,7 +20,7 @@ body {
 }
 
 .poppins {
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .social {
@@ -42,13 +42,12 @@ body {
 }
 
 .project_2 {
-   background-image: url('~p2c.png');
+  background-image: url('~p2c.png');
 }
 
 .project_3 {
-   background-image: url('~p3.png');
+  background-image: url('~p3.png');
 }
-
 
 .link {
   background-color: $link-color;
@@ -57,7 +56,7 @@ body {
 }
 
 .bio {
-  background-color:#212123;
+  background-color: #212123;
   height: 245px;
   width: 245px;
 }
@@ -92,15 +91,10 @@ body {
 }
 
 aside ul {
-  /* Abs positioning makes it not take up vert space */
   position: absolute;
   top: 0;
   left: 100px;
- 
-  /* Border is the new background */
   background: none;
-
-  /* Rotate from top left corner (not default) */
   transform-origin: 0 0;
   transform: rotate(90deg);
 }
@@ -154,7 +148,7 @@ li {
   margin: 1rem 0 5rem 2rem;
 }
 
-.list li{
+.list li {
   list-style: disc;
 }
 
@@ -174,7 +168,6 @@ li {
   .w {
     width: 50%;
   }
-
 
   .link_3 {
     width: 30%;
