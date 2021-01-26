@@ -4,7 +4,7 @@
      <div class="col-6 mt-5">
       <div class="d-flex justify-content-between">
         <div class="hello d-flex mt-5">
-          <h1 class="text-muted mt-4"><a id="one">01</a></h1>
+          <h1 class="text-muted mt-4"><a id="1">01</a></h1>
           <h6 class="text-white mt-5 pl-2">Hello I'm</h6>
         </div>
         <%= image_tag('circle', alt: 'circle', class: 'mt-5')%>
@@ -31,23 +31,27 @@
             <i class="fab fa-linkedin-in text-white"></i>
           <% end %>
         </div>
-        <div><i class="fab fa-angellist bg-white"></i></div>
+        <div>
+          <%= link_to '#' do %>
+            <i class="fab fa-angellist text-white"></i>
+          <% end %>
+        </div>
     </div>
      </div>
      <div class="col-2 mt-5">
        <aside>
          <ul class="d-flex justify-content-between mt-3">
            <li class="text-white">
-             <%= link_to 'Hello', class: '', anchor: 'one' %>
+             <%= link_to 'Hello', class: '', anchor: '1' %>
            </li>
            <li class="color ml-3">
-             <%= link_to 'Portfolio', class: 'color', anchor: 'two' %>
+             <%= link_to 'Portfolio', class: 'color', anchor: '2' %>
            </li>
            <li class="text-muted ml-3">
-             <%= link_to 'Service', anchor: 'three' %>
+             <%= link_to 'Service', anchor: '3' %>
            </li>
            <li class="text-white ml-3">
-             <%= link_to 'Contact', class: 'text-white', anchor: 'three' %>
+             <%= link_to 'Contact', class: 'text-white', anchor: '4' %>
            </li>
          </ul>
        </aside>
@@ -55,7 +59,7 @@
    </div>
    <div class="mt-5 ml-5">
       <div class="portfolio d-flex pt-5 ml-5">
-        <h1 class="text-muted"><a id="two">02</a></h1>
+        <h1 class="text-muted"><a id="2">02</a></h1>
         <h6 class="text-white mt-4 pl-2">My recent works</h6>
       </div>
       <div class="ml-5"><h1 class="text-white ml-5">Portfolio</h1></div>
@@ -71,12 +75,12 @@
        <div class="project_1 h text-white background_big">
          <h4 class="p-5">Movie Review App</h4>
           <div class="d-flex justify-content-between pt-2 w">
-            <h6 class="ml-4 font-weight-light">HTML/CSS</h6>
-            <h6>Ruby on Rails</h6>
-            <h6 class="mr-4">Bootstrap</h6>
+            <h6 class="ml-4 font-weight-light bg-dark">HTML/CSS</h6>
+            <h6 class="bg-dark">Ruby on Rails</h6>
+            <h6 class="mr-4 bg-dark">Bootstrap</h6>
           </div>
           <div class="link_b">
-            <%= link_to 'first' do %>
+            <%= link_to 'number-one' do %>
               <h6 class="m-3 pt-3 text-white">See this project <%= image_tag('Union') %></h6>
             <% end %>
           </div>
@@ -95,12 +99,12 @@
          <div class="project_4_big background_big">
              <h4 class="pl-4 pb-2 pt-2 text-white">Social Media App</h4>
           <div class="d-flex justify-content-between">
-            <h6 class=" font-weight-light text-white ml-3">HTML/CSS</h6>
-            <h6 class="text-white pl-2">Ruby on Rails</h6>
-            <h6 class="mr-4 text-white">Bootstrap</h6>
+            <h6 class=" font-weight-light text-white ml-3 bg-dark">HTML/CSS</h6>
+            <h6 class="text-white pl-2 pr-2 bg-dark">Ruby on Rails</h6>
+            <h6 class="mr-4 text-white bg-dark">Bootstrap</h6>
           </div>
           <div class="link_3">
-            <%= link_to 'first' do %>
+            <%= link_to 'number-two' do %>
               <h6 class="pt-3 pl-3 text-white">See this project <%= image_tag('Union') %></h6>
             <% end %>
           </div>
@@ -183,7 +187,7 @@
      <div class="col-5 text-white">
       <div class="d-flex justify-content-between">
         <div class="hello d-flex mt-5">
-          <h1 class="text-muted mt-4"><a id="three">03</a></h1>
+          <h1 class="text-muted mt-4"><a id="3">03</a></h1>
           <h6 class="text-white mt-5 pl-2">Some words</h6>
         </div>
         <%= image_tag('circle', alt: 'circle', class: 'mt-5')%>
@@ -201,7 +205,7 @@
    <div class="d-flex flex-column f mx-auto">
         <div class="hello d-flex justify-content-between mt-5">
         <div class="d-flex">
-          <h1 class="text-muted mt-4"><a id="four">04</a></h1>
+          <h1 class="text-muted mt-4"><a id="4">04</a></h1>
           <h6 class="text-white mt-5 pl-2">Interested in collaborating?</h6>
           </div>
           <div class="align-content-end"><%= image_tag('circle', alt: 'circle', class: '')%></div>
@@ -236,7 +240,11 @@
             <i class="fab fa-linkedin-in text-white"></i>
           <% end %>
         </div>
-        <div class="pr-3"><i class="fab fa-angellist bg-white"></i></div>
+        <div>
+          <%= link_to '#' do %>
+            <i class="fab fa-angellist text-white"></i>
+          <% end %>
+        </div>
     </div>
     </div>
 </div>

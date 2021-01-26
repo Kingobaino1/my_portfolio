@@ -110,21 +110,14 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-# config.action_mailer.delivery_method = :smtp
-# host = 'example.com' #replace with your own url
-# config.action_mailer.default_url_options = { host: host }
-
-#local host
-
-host = 'localhost:3000'
-config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
+config.action_mailer.delivery_method = :smtp
 
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :user_name            => ENV['USER_NAME'],
-  :password             => ENV['EMAIL_KEY'],
+  :user_name            => ENV['gmail_username'],
+  :password             => ENV['gmail_password'],
   :authentication       => "plain",
   :enable_starttls_auto => true
 }

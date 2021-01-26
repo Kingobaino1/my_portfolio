@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      # ContactMailer.with(contact: @contact).new_contact_email.deliver_later
+      ContactMailer.with(contact: @contact).new_contact_email.deliver
       flash[:success] = 'Email sent'
     else
       flash[:danger] = 'Email not sent'
