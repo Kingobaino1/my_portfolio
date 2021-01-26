@@ -86,5 +86,95 @@ body {
 .b_color {
   background-color: $link-color;
 }
-@media only screen and (min-width: 320px){
+
+aside ul {
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  top: 0;
+  left: 100px;
+ 
+  /* Border is the new background */
+  background: none;
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+li {
+  list-style: none;
+}
+
+.background_big {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+}
+
+.project_1_big {
+  background-image: url('~p1_big.png');
+}
+
+.project_2_big {
+  background-image: url('~p2_big.png');
+}
+
+.project_3_big {
+  background-image: url('~p3_big.png');
+}
+
+.project_4_big {
+  background-image: url('~Rectangle 26.png');
+}
+
+.h {
+  height: 300px;
+}
+
+.link_b {
+  background-color: $link-color;
+  width: 35%;
+  height: 55px;
+  margin: 4.5rem 0 0 2rem;
+}
+
+.link_3 {
+  background-color: $link-color;
+  width: 50%;
+  height: 50px;
+  margin: 1rem 0 5rem 2rem;
+}
+
+.list li{
+  list-style: disc;
+}
+
+.f {
+  width: 60%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .socials {
+    width: 70%;
+  }
+
+  .link_b {
+    width: 20%;
+  }
+
+  .w {
+    width: 50%;
+  }
+
+
+  .link_3 {
+    width: 30%;
+    height: 50px;
+    margin: 1rem 0 3rem 2rem;
+  }
+
+  .cv {
+    margin-top: 20rem;
+  }
 }
